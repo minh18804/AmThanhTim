@@ -8,7 +8,7 @@ import os
 cwd = os.getcwd()
 # Đường dẫn đến file txt chứa dữ liệu thô
 #parent_cwd = os.path.join(cwd, os.pardir)
-file_path = os.path.join(cwd, "data", "pcg", "modified_c3.csv")
+file_path = os.path.join(cwd, "data", "pcg", "modified_c2.csv")
 data = pd.read_csv(file_path, header=None)
 
 # Lấy tín hiệu từ cột đầu tiên (giả sử dữ liệu là một cột)
