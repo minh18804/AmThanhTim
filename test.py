@@ -17,7 +17,12 @@ with open(file_path, "r") as file:
 # Loại bỏ ký tự xuống dòng và khoảng trắng, sau đó chuyển thành số nguyên
 data = [int(value) for value in raw_data.strip().split()]
 
-print(max(data))
+data = data[:len(data)//64]
+
+# data = data[ 1* (len(data)//32 ) : 2* (len(data)//32)]
+
+
+# print(max(data))
 
 # Bước 3: Vẽ tín hiệu âm thanh
 plt.figure(figsize=(12, 6))
